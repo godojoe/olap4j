@@ -17,7 +17,7 @@ java.targetCompatibility = JavaVersion.VERSION_17
 sourceSets {
     main {
         java {
-            srcDirs("$projectDir/generated", "$projectDir/src")
+            srcDirs("$projectDir/src/generated", "$projectDir/src")
         }
     }
 }
@@ -91,6 +91,10 @@ tasks.withType<JavaCompile>() {
 
 tasks.withType<Javadoc>() {
     options.encoding = "UTF-8"
+}
+
+tasks.getByName("compileJava") {
+    dependsOn(tasks.getByName("parser"))
 }
 
 tasks.getByName("clean") {
