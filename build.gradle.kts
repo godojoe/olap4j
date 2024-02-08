@@ -7,10 +7,17 @@ plugins {
     `maven-publish`
 }
 
+group = "org.olap4j"
+version = "1.3.0-SNAPSHOT"
+description = "olap4j"
+
+java.sourceCompatibility = JavaVersion.VERSION_17
+java.targetCompatibility = JavaVersion.VERSION_17
+
 sourceSets {
     main {
         java {
-            srcDirs("$projectDir/src/generated/java", "$projectDir/src/main/java")
+            srcDirs("$projectDir/generated", "$projectDir/src")
         }
     }
 }
@@ -47,7 +54,7 @@ tasks {
 val javaccparsergen = configurations.create("javaccparsergen")
 
 dependencies {
-    api(libs.net.java.openjdk.ctsym.java7)
+   // api(libs.net.java.openjdk.ctsym.java7)
     api(libs.xerces.xercesimpl)
     api(libs.commons.dbcp.commons.dbcp)
     api(libs.com.h2database.h2)
@@ -58,20 +65,15 @@ dependencies {
     api(libs.commons.logging.commons.logging)
     api(libs.commons.math.commons.math)
     api(libs.javax.servlet.servlet.api)
-    api(libs.pentaho.mondrian.data.foodmart)
+    //api(libs.pentaho.mondrian.data.foodmart)
     javaccparsergen(libs.net.java.dev.javacc.javacc)
     testImplementation(libs.junit.junit)
     testImplementation(libs.org.apache.commons.commons.dbcp2)
-    testImplementation(libs.pentaho.mondrian)
+    //testImplementation(libs.pentaho.mondrian)
     testImplementation(libs.log4j.log4j)
-    compileOnly(libs.com.sun.rt.jdk1.v5)
-    compileOnly(libs.net.java.openjdk.rt.java6)
+    //compileOnly(libs.com.sun.rt.jdk1.v5)
+    //compileOnly(libs.net.java.openjdk.rt.java6)
 }
-
-group = "org.olap4j"
-version = "1.3.0-SNAPSHOT"
-description = "olap4j"
-java.sourceCompatibility = JavaVersion.VERSION_1_5
 
 java {
     withSourcesJar()
