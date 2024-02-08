@@ -2,25 +2,23 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
-com-h2database-h2 = "1.3.172"
+com-h2database-h2 = "1.4.199"
 com-sun-rt-jdk1-v5 = "1.5.0_22"
 commons-collections-commons-collections = "3.2"
-commons-dbcp-commons-dbcp = "1.1"
+commons-dbcp-commons-dbcp = "1.4"
 commons-logging-commons-logging = "1.2"
+#commons-math-commons-math = "1.1"
 commons-math-commons-math = "1.2"
 commons-pool-commons-pool = "1.1"
 commons-vfs-commons-vfs = "1.0"
 javax-servlet-servlet-api = "2.4"
 junit-junit = "3.8"
 log4j-log4j = "1.2.17"
-mysql-mysql-connector-java = "5.1.38"
+mysql-mysql-connector-java = "8.0.27"
 net-java-dev-javacc-javacc = "5.0"
 net-java-openjdk-ctsym-java7 = "1.7.0_15"
 net-java-openjdk-rt-java6 = "1.6.0_24"
 org-apache-commons-commons-dbcp2 = "2.1"
-pentaho-mondrian = "4.3.0.1-130"
-pentaho-mondrian-data-foodmart = "0.9-SNAPSHOT"
-xerces-xercesimpl = "2.6.2"
 
 [libraries]
 com-h2database-h2 = { module = "com.h2database:h2", version.ref = "com-h2database-h2" }
