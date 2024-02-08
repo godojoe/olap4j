@@ -99,6 +99,11 @@ public interface OlapStatement extends Statement, OlapWrapper {
         CellSetListener.Granularity granularity,
         CellSetListener listener)
         throws OlapException;
+
+
+
+
+
 }
 
 // End OlapStatement.java

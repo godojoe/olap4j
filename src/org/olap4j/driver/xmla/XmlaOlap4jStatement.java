@@ -265,6 +265,14 @@ abstract class XmlaOlap4jStatement implements OlapStatement {
         throw new UnsupportedOperationException();
     }
 
+    public void closeOnCompletion() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public boolean isCloseOnCompletion() throws SQLException {
+        return false;
+    }
+
     // implement Wrapper
 
     public <T> T unwrap(Class<T> iface) throws SQLException {

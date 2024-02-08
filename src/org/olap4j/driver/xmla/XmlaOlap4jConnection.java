@@ -38,6 +38,7 @@ import java.net.URL;
 import java.sql.*;
 import java.util.*;
 import java.util.Map.Entry;
+import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.regex.Pattern;
 
@@ -1190,6 +1191,62 @@ abstract class XmlaOlap4jConnection implements OlapConnection {
             + "</SOAP-ENV:Body>\n"
             + "</SOAP-ENV:Envelope>");
         return buf.toString();
+    }
+
+    public Clob createClob() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public Blob createBlob() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public NClob createNClob() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public SQLXML createSQLXML() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public boolean isValid(int timeout) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setClientInfo(String name, String value) throws SQLClientInfoException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setClientInfo(Properties properties) throws SQLClientInfoException {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getClientInfo(String name) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public Properties getClientInfo() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public Array createArrayOf(String typeName, Object[] elements) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public Struct createStruct(String typeName, Object[] attributes) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void abort(Executor executor) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setNetworkTimeout(Executor executor, int milliseconds) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public int getNetworkTimeout() throws SQLException {
+        throw new UnsupportedOperationException();
     }
 
     /**

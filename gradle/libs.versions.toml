@@ -19,6 +19,7 @@ net-java-dev-javacc-javacc = "5.0"
 net-java-openjdk-ctsym-java7 = "1.7.0_15"
 net-java-openjdk-rt-java6 = "1.6.0_24"
 org-apache-commons-commons-dbcp2 = "2.1"
+xerces-xercesimpl = "2.12.0"
 
 [libraries]
 com-h2database-h2 = { module = "com.h2database:h2", version.ref = "com-h2database-h2" }
@@ -37,6 +38,6 @@ net-java-dev-javacc-javacc = { module = "net.java.dev.javacc:javacc", version.re
 net-java-openjdk-ctsym-java7 = { module = "net.java.openjdk:ctsym-java7", version.ref = "net-java-openjdk-ctsym-java7" }
 net-java-openjdk-rt-java6 = { module = "net.java.openjdk:rt-java6", version.ref = "net-java-openjdk-rt-java6" }
 org-apache-commons-commons-dbcp2 = { module = "org.apache.commons:commons-dbcp2", version.ref = "org-apache-commons-commons-dbcp2" }
-pentaho-mondrian = { module = "pentaho:mondrian", version.ref = "pentaho-mondrian" }
-pentaho-mondrian-data-foodmart = { module = "pentaho:mondrian-data-foodmart", version.ref = "pentaho-mondrian-data-foodmart" }
+#pentaho-mondrian = { module = "pentaho:mondrian", version.ref = "pentaho-mondrian" }
+#pentaho-mondrian-data-foodmart = { module = "pentaho:mondrian-data-foodmart", version.ref = "pentaho-mondrian-data-foodmart" }
 xerces-xercesimpl = { module = "xerces:xercesImpl", version.ref = "xerces-xercesimpl" }

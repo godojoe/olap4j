@@ -25,6 +25,7 @@ import org.olap4j.metadata.XmlaConstants;
 import org.w3c.dom.Element;
 
 import java.sql.ResultSet;
+import java.sql.RowIdLifetime;
 import java.sql.SQLException;
 import java.util.*;
 import java.util.regex.Matcher;
@@ -974,6 +975,42 @@ abstract class XmlaOlap4jDatabaseMetaData implements OlapDatabaseMetaData {
     }
 
     public boolean supportsStatementPooling() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public RowIdLifetime getRowIdLifetime() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public ResultSet getSchemas(String catalog, String schemaPattern) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public boolean supportsStoredFunctionsUsingCallSyntax() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public boolean autoCommitFailureClosesAllResultSets() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public ResultSet getClientInfoProperties() throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public ResultSet getFunctions(String catalog, String schemaPattern, String functionNamePattern) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public ResultSet getFunctionColumns(String catalog, String schemaPattern, String functionNamePattern, String columnNamePattern) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public ResultSet getPseudoColumns(String catalog, String schemaPattern, String tableNamePattern, String columnNamePattern) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public boolean generatedKeyAlwaysReturned() throws SQLException {
         throw new UnsupportedOperationException();
     }
 

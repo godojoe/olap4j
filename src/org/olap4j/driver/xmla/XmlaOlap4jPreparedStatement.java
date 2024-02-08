@@ -424,6 +424,78 @@ abstract class XmlaOlap4jPreparedStatement
         throw Olap4jUtil.needToImplement(this);
     }
 
+    public void setRowId(int parameterIndex, RowId x) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setNString(int parameterIndex, String value) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setNCharacterStream(int parameterIndex, Reader value, long length) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setNClob(int parameterIndex, NClob value) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setClob(int parameterIndex, Reader reader, long length) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setBlob(int parameterIndex, InputStream inputStream, long length) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setNClob(int parameterIndex, Reader reader, long length) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setSQLXML(int parameterIndex, SQLXML xmlObject) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setAsciiStream(int parameterIndex, InputStream x, long length) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setBinaryStream(int parameterIndex, InputStream x, long length) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setCharacterStream(int parameterIndex, Reader reader, long length) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setAsciiStream(int parameterIndex, InputStream x) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setBinaryStream(int parameterIndex, InputStream x) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setCharacterStream(int parameterIndex, Reader reader) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setNCharacterStream(int parameterIndex, Reader value) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setClob(int parameterIndex, Reader reader) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setBlob(int parameterIndex, InputStream inputStream) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setNClob(int parameterIndex, Reader reader) throws SQLException {
+        throw new UnsupportedOperationException();
+    }
+
     // Helper classes
 
     private interface TypeHelper<T> {
