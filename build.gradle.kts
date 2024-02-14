@@ -54,11 +54,16 @@ tasks {
 val javaccparsergen = configurations.create("javaccparsergen")
 
 dependencies {
-   // api(libs.net.java.openjdk.ctsym.java7)
+    // api(libs.net.java.openjdk.ctsym.java7)
     api(libs.xerces.xercesimpl)
     api(libs.commons.dbcp.commons.dbcp)
     api(libs.com.h2database.h2)
     api(libs.mysql.mysql.connector.java)
+    api("com.google.protobuf:protobuf-java") {
+        version {
+            strictly("3.11.0")
+        }
+    }
     api(libs.commons.pool.commons.pool)
     api(libs.commons.collections.commons.collections)
     api(libs.commons.vfs.commons.vfs)
